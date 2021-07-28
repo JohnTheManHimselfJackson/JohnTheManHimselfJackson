@@ -66,14 +66,15 @@ if __name__ == "__main__":
             print("no thinking outside the box") # Out of bounds.
             
         else:
-            if grid[currentRow][currentCol] == EMPTY:
+            cell = grid[currentRow][CurrentCol]
+            if cell == EMPTY:
                 grid[currentRow][currentCol] = VISITED
                 
-            elif grid[currentRow][currentCol] == WALL:
+            elif cell == WALL:
                 done = True
                 print("absolutely blind") # Hit wall.
 
-            elif grid[currentRow][currentCol] == END:
+            elif cell == END:
                 done = True
                 solved = True
                 print("you saw through the jedi's lies, Great success") # Solved.
