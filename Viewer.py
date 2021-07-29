@@ -13,7 +13,7 @@ def View(grid):
                 print("##", end = "")
                     
             elif grid[i][j] == maze.START:
-                print("^^", end = "")
+                print("@@", end = "")
                     
             elif grid[i][j] == maze.END:
                 print("$$", end = "")
